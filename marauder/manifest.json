@@ -5,11 +5,11 @@
   "homepage": "https://github.com/justcallmekoko/ESP32Marauder",
   "logo": "assets/marauder.jpg",
   "defaultDevice": "nm-cyd-c5",
-  "defaultVersion": "v1.11.1",
+  "defaultVersion": "v1.14.0",
   "behavior": "console",
   "product": {
     "link": "https://rockbase.shop/products/nm-cyd-c5-colorful/",
-    "image": "assets/cyd.png"
+    "image": "assets/product.png"
   },
   "fileSets": {
     "esp32-d0-four": [
@@ -29,7 +29,6 @@
     "nm-cyd-c5": { "displayName": "NM-CYD-C5", "chip": "esp32c5", "fileSet": "esp32-c5-four" }
   },
   "versions": [
-    { "id": "v1.11.1", "devices": ["nm-cyd-c5"] },
     { "id": "v1.14.0", "devices": ["nm-cyd-c5"] }
   ]
 }
