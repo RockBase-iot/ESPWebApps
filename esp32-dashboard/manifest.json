@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "esp32-dashboard",
+  "name": "esp32-dashboard",
+  "homepage": "https://github.com/RockBase-iot/ESP32-Dashboard",
+  "logo": "assets/logo.svg",
+  "defaultDevice": "nm-epd-420",
+  "defaultVersion": "v1.0.0",
+  "behavior": "console",
+  "product": {
+    "link": "https://rockbase.shop/products/nm-epd-420",
+    "image": "assets/product.png"
+  },
+  "fileSets": {
+    "single-app": [
+      {
+        "label": "firmware.bin",
+        "path": "{app}/{version}/{device}/firmware.bin",
+        "offset": "0x0"
+      }
+    ]
+  },
+  "devices": {
+    "nm-epd-420": {
+      "displayName": "NM-EPD-420",
+      "chip": "esp32s3",
+      "fileSet": "single-app"
+    }
+  },
+  "versions": [
+    {
+      "id": "v1.0.0",
+      "devices": [
+        "nm-epd-420"
+      ]
+    }
+  ]
+}

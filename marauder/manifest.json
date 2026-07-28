@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "marauder",
+  "name": "ESP32 Marauder",
+  "homepage": "https://github.com/justcallmekoko/ESP32Marauder",
+  "logo": "assets/marauder.jpg",
+  "defaultDevice": "nm-cyd-c5",
+  "defaultVersion": "v1.11.1",
+  "behavior": "console",
+  "product": {
+    "link": "https://rockbase.shop/products/nm-cyd-c5-colorful/",
+    "image": "assets/cyd.png"
+  },
+  "fileSets": {
+    "esp32-d0-four": [
+      { "label": "bootloader.bin", "path": "{app}/{version}/{device}/bootloader.bin", "offset": "0x1000" },
+      { "label": "partitions.bin", "path": "{app}/{version}/{device}/partitions.bin", "offset": "0x8000" },
+      { "label": "boot_app0.bin", "path": "{app}/{version}/{device}/boot_app0.bin", "offset": "0xe000" },
+      { "label": "firmware.bin", "path": "{app}/{version}/{device}/firmware.bin", "offset": "0x10000" }
+    ],
+    "esp32-c5-four": [
+      { "label": "bootloader.bin", "path": "{app}/{version}/{device}/bootloader.bin", "offset": "0x2000" },
+      { "label": "partitions.bin", "path": "{app}/{version}/{device}/partitions.bin", "offset": "0x8000" },
+      { "label": "boot_app0.bin", "path": "{app}/{version}/{device}/boot_app0.bin", "offset": "0xe000" },
+      { "label": "firmware.bin", "path": "{app}/{version}/{device}/firmware.bin", "offset": "0x10000" }
+    ]
+  },
+  "devices": {
+    "nm-cyd-c5": { "displayName": "NM-CYD-C5", "chip": "esp32c5", "fileSet": "esp32-c5-four" }
+  },
+  "versions": [
+    { "id": "v1.11.1", "devices": ["nm-cyd-c5"] },
+    { "id": "v1.14.0", "devices": ["nm-cyd-c5"] }
+  ]
+}

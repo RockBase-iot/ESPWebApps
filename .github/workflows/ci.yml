@@ -1,0 +1,38 @@
+name: PR Validation
+
+on:
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pr-validation-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  index-and-manifest-check:
+    name: Index And Manifest Check
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Regenerate apps index
+        run: node scripts/generate-apps-index.mjs --write --include-legacy
+
+      - name: Ensure apps.json is up to date
+        run: |
+          git diff --exit-code -- apps.json || (echo "apps.json is out of date. Run: node scripts/generate-apps-index.mjs --write --include-legacy" && exit 1)
+
+      - name: Validate manifests (schema gate)
+        run: node scripts/validate-manifests.mjs --skip-file-check

@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "defaultApp": "bruce",
+  "apps": [
+    {
+      "id": "bruce",
+      "manifest": "bruce/manifest.json"
+    },
+    {
+      "id": "deskbuddy",
+      "manifest": "deskbuddy/manifest.json"
+    },
+    {
+      "id": "espclaw",
+      "manifest": "espclaw/manifest.json"
+    },
+    {
+      "id": "marauder",
+      "manifest": "marauder/manifest.json"
+    },
+    {
+      "id": "esp32-dashboard",
+      "manifest": "esp32-dashboard/manifest.json"
+    }
+  ]
+}

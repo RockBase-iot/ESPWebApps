@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "espclaw",
+  "name": "ESP-Claw",
+  "homepage": "https://github.com/espressif/esp-claw",
+  "logo": "assets/espclaw.svg",
+  "defaultDevice": "nm-cyd-c5",
+  "defaultVersion": "v0.3.2",
+  "behavior": "console",
+  "product": {
+    "link": "https://rockbase.shop/products/nm-cyd-c5-colorful",
+    "image": "assets/esp-claw.png"
+  },
+  "fileSets": {
+    "single-app": [
+      { "label": "firmware.bin", "path": "{app}/{version}/{device}/firmware.bin", "offset": "0x0" }
+    ]
+  },
+  "devices": {
+    "nm-cyd-c5": { "displayName": "NM-CYD-C5", "chip": "esp32c5", "fileSet": "single-app" },
+    "nm-display-28inch": { "displayName": "NM-Display-2.8inch", "chip": "esp32s3", "fileSet": "single-app" }
+  },
+  "versions": [
+    { "id": "v0.3.2", "devices": ["nm-cyd-c5", "nm-display-28inch"] }
+  ]
+}

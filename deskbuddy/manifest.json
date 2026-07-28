@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "deskbuddy",
+  "name": "DeskBuddy",
+  "homepage": "https://github.com/RockBase-iot/deskbuddy-tv",
+  "logo": "assets/nmiot.svg",
+  "defaultDevice": "nm-tv-154",
+  "defaultVersion": "v0.3.8",
+  "behavior": "console",
+  "product": {
+    "link": "https://www.nmminer.com/product/nm-tv-154/",
+    "image": "assets/deskbuddy.png"
+  },
+  "fileSets": {
+    "single-app": [
+      { "label": "firmware.bin", "path": "{app}/{version}/{device}/firmware.bin", "offset": "0x0" }
+    ]
+  },
+  "devices": {
+    "nm-tv-154": { "displayName": "NM-TV-154", "chip": "esp32", "fileSet": "single-app", "compress": true }
+  },
+  "versions": [
+    { "id": "v0.3.8", "devices": ["nm-tv-154"] }
+  ]
+}

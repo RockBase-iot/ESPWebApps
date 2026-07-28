@@ -1,0 +1,11 @@
+{
+  "name": "espwebapps-aggregator",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Firmware app aggregation utilities for flash.rockbaseiot.com",
+  "scripts": {
+    "apps:index": "node scripts/generate-apps-index.mjs --write",
+    "apps:validate": "node scripts/validate-manifests.mjs",
+    "apps:template": "node scripts/create-app-template.mjs"
+  }
+}
