@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "meshtastic",
+  "name": "Meshtastic",
+  "homepage": "https://github.com/meshtastic/firmware",
+  "logo": "assets/meshtastic.png",
+  "defaultDevice": "nm-epd-420",
+  "defaultVersion": "v2.8.0.67a9bde",
+  "behavior": "console",
+  "product": {
+    "link": "https://rockbase.shop/products/nm-epd-420/",
+    "image": "assets/nm-epd-420-mesh.png"
+  },
+  "fileSets": {
+    "single-app": [
+      { "label": "firmware.bin", "path": "{app}/{version}/{device}/firmware.bin", "offset": "0x0" }
+    ]
+  },
+  "devices": {
+    "nm-epd-420": { "displayName": "NM-EPD-420", "chip": "esp32s3", "fileSet": "single-app" },
+    "nm-epd-420-inkhud": { "displayName": "NM-EPD-420-InkHUD", "chip": "esp32s3", "fileSet": "single-app" }
+  },
+  "versions": [
+    { "id": "v2.8.0.67a9bde", "devices": ["nm-epd-420", "nm-epd-420-inkhud"] }
+  ]
+}

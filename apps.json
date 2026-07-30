@@ -21,6 +21,10 @@
     {
       "id": "esp32-dashboard",
       "manifest": "esp32-dashboard/manifest.json"
+    },
+    {
+      "id": "meshtastic",
+      "manifest": "meshtastic/manifest.json"
     }
   ]
 }
