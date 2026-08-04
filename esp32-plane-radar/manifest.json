@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "esp32-plane-radar",
+  "name": "ESP32 Plane Radar",
+  "homepage": "https://github.com/RockBase-iot/ESP32-Plane-Radar",
+  "logo": "assets/logo.svg",
+  "defaultDevice": "nm-tv-154",
+  "defaultVersion": "v0.1",
+  "behavior": "console",
+  "product": {
+    "link": "https://www.nmminer.com/product/nm-tv-154/",
+    "image": "assets/nm-tv.jpg"
+  },
+  "fileSets": {
+    "esp32-d0-four": [
+      { "label": "bootloader.bin", "path": "{app}/{version}/{device}/bootloader.bin", "offset": "0x1000" },
+      { "label": "partitions.bin", "path": "{app}/{version}/{device}/partitions.bin", "offset": "0x8000" },
+      { "label": "boot_app0.bin", "path": "{app}/{version}/{device}/boot_app0.bin", "offset": "0xe000" },
+      { "label": "firmware.bin", "path": "{app}/{version}/{device}/firmware.bin", "offset": "0x10000" }
+    ]
+  },
+  "devices": {
+    "nm-tv-154": { "displayName": "NM-TV-154", "chip": "esp32", "fileSet": "esp32-d0-four", "compress": true }
+  },
+  "versions": [
+    { "id": "v0.1", "devices": ["nm-tv-154"] }
+  ]
+}
