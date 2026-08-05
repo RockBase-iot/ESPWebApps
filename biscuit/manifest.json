@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "biscuit",
+  "name": "Biscuit",
+  "homepage": "https://github.com/RockBase-iot/biscuit",
+  "logo": "assets/logo.svg",
+  "defaultDevice": "nm-epd-420-bw",
+  "defaultVersion": "v0.1.0",
+  "behavior": "console",
+  "product": {
+    "link": "https://rockbase.shop/products/nm-epd-420",
+    "image": "assets/biscuit.jpg"
+  },
+  "fileSets": {
+    "esp32-s3-four": [
+      { "label": "bootloader.bin", "path": "{app}/{version}/{device}/bootloader.bin", "offset": "0x0" },
+      { "label": "partitions.bin", "path": "{app}/{version}/{device}/partitions.bin", "offset": "0x8000" },
+      { "label": "boot_app0.bin", "path": "{app}/{version}/{device}/boot_app0.bin", "offset": "0xe000" },
+      { "label": "firmware.bin", "path": "{app}/{version}/{device}/firmware.bin", "offset": "0x10000" }
+    ]
+  },
+  "devices": {
+    "nm-epd-420-bw": { "displayName": "NM-EPD-420-BW", "chip": "esp32s3", "fileSet": "esp32-s3-four", "compress": true }
+  },
+  "versions": [
+    { "id": "v0.1.0", "devices": ["nm-epd-420-bw"] }
+  ]
+}
