@@ -5,7 +5,7 @@
   "homepage": "https://github.com/RockBase-iot/ESP32-Plane-Radar",
   "logo": "assets/logo.svg",
   "defaultDevice": "nm-tv-154",
-  "defaultVersion": "v0.1",
+  "defaultVersion": "v1.2.0",
   "behavior": "console",
   "product": {
     "link": "https://www.nmminer.com/product/nm-tv-154/",
@@ -23,6 +23,7 @@
     "nm-tv-154": { "displayName": "NM-TV-154", "chip": "esp32", "fileSet": "esp32-d0-four", "compress": true }
   },
   "versions": [
+    { "id": "v1.2.0", "devices": ["nm-tv-154"] },
     { "id": "v0.1", "devices": ["nm-tv-154"] }
   ]
 }
