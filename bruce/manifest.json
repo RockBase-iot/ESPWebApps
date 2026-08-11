@@ -5,7 +5,7 @@
   "homepage": "https://github.com/pr3y/Bruce",
   "logo": "assets/bruce.png",
   "defaultDevice": "esp32-2432s028",
-  "defaultVersion": "v1.15.0",
+  "defaultVersion": "v1.16.1",
   "behavior": "console",
   "product": {
     "link": "https://www.nmminer.com/product/nm-rf-hat/",
@@ -21,6 +21,7 @@
     "nm-cyd-c5": { "displayName": "NM-CYD-C5", "chip": "esp32c5", "fileSet": "single-app" }
   },
   "versions": [
-    { "id": "v1.15.0", "devices": ["esp32-2432s028", "nm-cyd-c5"] }
+    { "id": "v1.15.0", "devices": ["esp32-2432s028", "nm-cyd-c5"] },
+    { "id": "v1.16.1", "devices": ["esp32-2432s028", "nm-cyd-c5"] }
   ]
 }
