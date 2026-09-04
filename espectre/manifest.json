@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "espectre",
+  "name": "ESPectre",
+  "homepage": "https://github.com/francescopace/espectre",
+  "logo": "assets/espectre.png",
+  "defaultDevice": "nm-cyd-c5",
+  "defaultVersion": "v2.8.0",
+  "behavior": "console",
+  "product": {
+    "link": "https://rockbase.shop/products/nm-cyd-c5-colorful",
+    "image": "assets/c5-espectre.png"
+  },
+  "fileSets": {
+    "single-app": [
+      { "label": "firmware.bin", "path": "{app}/{version}/{device}/firmware.bin", "offset": "0x0" }
+    ]
+  },
+  "devices": {
+    "nm-cyd-c5": { "displayName": "NM-CYD-C5", "chip": "esp32c5", "fileSet": "single-app" }
+  },
+  "versions": [
+    { "id": "v2.8.0", "devices": ["nm-cyd-c5"] }
+  ]
+}

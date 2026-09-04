@@ -29,6 +29,14 @@
     {
       "id": "esp32-plane-radar",
       "manifest": "esp32-plane-radar/manifest.json"
+    },
+    {
+      "id": "meshcore",
+      "manifest": "meshcore/manifest.json"
+    },
+    {
+      "id": "espectre",
+      "manifest": "espectre/manifest.json"
     }
   ]
 }

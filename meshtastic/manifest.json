@@ -19,9 +19,10 @@
   "devices": {
     "nm-epd-420": { "displayName": "NM-EPD-420", "chip": "esp32s3", "fileSet": "single-app" },
     "nm-epd-420-bw": { "displayName": "NM-EPD-420-BW", "chip": "esp32s3", "fileSet": "single-app" },
-    "nm-epd-420-inkhud": { "displayName": "NM-EPD-420-InkHUD", "chip": "esp32s3", "fileSet": "single-app" }
+    "nm-epd-420-inkhud": { "displayName": "NM-EPD-420-InkHUD", "chip": "esp32s3", "fileSet": "single-app" },
+    "nm-epd-420-bw-inkhud": { "displayName": "NM-EPD-420-BW-InkHUD", "chip": "esp32s3", "fileSet": "single-app" }
   },
   "versions": [
-    { "id": "v2.8.0.67a9bde", "devices": ["nm-epd-420", "nm-epd-420-bw", "nm-epd-420-inkhud"] }
+    { "id": "v2.8.0.67a9bde", "devices": ["nm-epd-420", "nm-epd-420-bw", "nm-epd-420-inkhud", "nm-epd-420-bw-inkhud"] }
   ]
 }

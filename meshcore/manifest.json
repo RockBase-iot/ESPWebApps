@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "meshcore",
+  "name": "MeshCore",
+  "homepage": "https://github.com/meshcore-dev/MeshCore",
+  "logo": "assets/icon.png",
+  "defaultDevice": "nm-epd-420-bw-companion-radio-ble",
+  "defaultVersion": "v1.17.0",
+  "behavior": "console",
+  "product": {
+    "link": "https://rockbase.shop/products/nm-epd-420/",
+    "image": "assets/nm-epd-420-meshcore.png"
+  },
+  "fileSets": {
+    "esp32s3-four-app": [
+      { "label": "bootloader.bin", "path": "{app}/{version}/{device}/bootloader.bin", "offset": "0x0" },
+      { "label": "partitions.bin", "path": "{app}/{version}/{device}/partitions.bin", "offset": "0x8000" },
+      { "label": "boot_app0.bin", "path": "{app}/{version}/{device}/boot_app0.bin", "offset": "0xe000" },
+      { "label": "firmware.bin", "path": "{app}/{version}/{device}/firmware.bin", "offset": "0x10000" }
+    ]
+  },
+  "devices": {
+    "nm-epd-420-bw-companion-radio-ble": { "displayName": "NM-EPD-420-BW-Companion-Radio-BLE", "chip": "esp32s3", "fileSet": "esp32s3-four-app" },
+    "nm-epd-420-bw-companion-radio-usb": { "displayName": "NM-EPD-420-BW-Companion-Radio-USB", "chip": "esp32s3", "fileSet": "esp32s3-four-app" },
+    "nm-epd-420-bw-kiss-modem": { "displayName": "NM-EPD-420-BW-KISS-Modem", "chip": "esp32s3", "fileSet": "esp32s3-four-app" },
+    "nm-epd-420-bw-repeater": { "displayName": "NM-EPD-420-BW-Repeater", "chip": "esp32s3", "fileSet": "esp32s3-four-app" },
+    "nm-epd-420-bw-room-server": { "displayName": "NM-EPD-420-BW-Room-Server", "chip": "esp32s3", "fileSet": "esp32s3-four-app" }
+  },
+  "versions": [
+    { "id": "v1.17.0", "devices": ["nm-epd-420-bw-companion-radio-ble", "nm-epd-420-bw-companion-radio-usb", "nm-epd-420-bw-kiss-modem", "nm-epd-420-bw-repeater", "nm-epd-420-bw-room-server"] }
+  ]
+}
