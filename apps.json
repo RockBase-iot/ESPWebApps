@@ -3,6 +3,14 @@
   "defaultApp": "bruce",
   "apps": [
     {
+      "id": "agentdeck",
+      "manifest": "agentdeck/manifest.json"
+    },
+    {
+      "id": "biscuit",
+      "manifest": "biscuit/manifest.json"
+    },
+    {
       "id": "bruce",
       "manifest": "bruce/manifest.json"
     },
@@ -11,32 +19,36 @@
       "manifest": "deskbuddy/manifest.json"
     },
     {
-      "id": "espclaw",
-      "manifest": "espclaw/manifest.json"
-    },
-    {
-      "id": "marauder",
-      "manifest": "marauder/manifest.json"
-    },
-    {
       "id": "esp32-dashboard",
       "manifest": "esp32-dashboard/manifest.json"
-    },
-    {
-      "id": "meshtastic",
-      "manifest": "meshtastic/manifest.json"
     },
     {
       "id": "esp32-plane-radar",
       "manifest": "esp32-plane-radar/manifest.json"
     },
     {
-      "id": "meshcore",
-      "manifest": "meshcore/manifest.json"
+      "id": "espclaw",
+      "manifest": "espclaw/manifest.json"
     },
     {
       "id": "espectre",
       "manifest": "espectre/manifest.json"
+    },
+    {
+      "id": "marauder",
+      "manifest": "marauder/manifest.json"
+    },
+    {
+      "id": "meshcore",
+      "manifest": "meshcore/manifest.json"
+    },
+    {
+      "id": "meshtastic",
+      "manifest": "meshtastic/manifest.json"
+    },
+    {
+      "id": "nm-epd420-bw-demo",
+      "manifest": "nm-epd420-bw-demo/manifest.json"
     }
   ]
 }

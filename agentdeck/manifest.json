@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "agentdeck",
+  "name": "AgentDeck",
+  "homepage": "https://github.com/puritysb/AgentDeck",
+  "logo": "assets/logo.svg",
+  "defaultDevice": "nm-epd-420",
+  "defaultVersion": "v1.2.2",
+  "behavior": "console",
+  "product": {
+    "link": "https://rockbase.shop/products/nm-epd-420",
+    "image": "assets/product.jpg"
+  },
+  "fileSets": {
+    "single-app": [
+      {
+        "label": "firmware.bin",
+        "path": "{app}/{version}/{device}/firmware.bin",
+        "offset": "0x0"
+      }
+    ]
+  },
+  "devices": {
+    "nm-epd-420": {
+      "displayName": "NM-EPD-420",
+      "chip": "esp32s3",
+      "fileSet": "single-app"
+    }
+  },
+  "versions": [
+    {
+      "id": "v1.2.2",
+      "devices": [
+        "nm-epd-420"
+      ]
+    }
+  ]
+}
