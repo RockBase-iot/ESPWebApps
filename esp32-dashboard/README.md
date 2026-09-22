@@ -10,6 +10,8 @@ Firmware package for ESP web flashing.
 - assets/logo.svg
 - assets/product.png
 - v1.0.0/nm-epd-420/firmware.bin
+- v1.0.1/nm-epd-420/firmware.bin
+- v1.0.1/nm-epd-420-4c/firmware.bin
 
 ## Notes
 
