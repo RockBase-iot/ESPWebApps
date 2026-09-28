@@ -49,6 +49,10 @@
     {
       "id": "nm-epd420-bw-demo",
       "manifest": "nm-epd420-bw-demo/manifest.json"
+    },
+    {
+      "id": "opendisplay",
+      "manifest": "opendisplay/manifest.json"
     }
   ]
 }

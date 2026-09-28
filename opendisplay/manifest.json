@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "opendisplay",
+  "name": "opendisplay",
+  "homepage": "https://github.com/OpenDisplay/Firmware",
+  "logo": "assets/logo.png",
+  "defaultDevice": "nm-epd-420-4c",
+  "defaultVersion": "v1.0.0",
+  "behavior": "console",
+  "product": {
+    "link": "https://rockbase.shop/products/nm-epd-420",
+    "image": "assets/product.png"
+  },
+  "fileSets": {
+    "single-app": [
+      {
+        "label": "firmware.bin",
+        "path": "{app}/{version}/{device}/firmware.bin",
+        "offset": "0x0"
+      }
+    ]
+  },
+  "devices": {
+    "nm-epd-420-4c": {
+      "displayName": "NM-EPD-420-4C",
+      "chip": "esp32s3",
+      "fileSet": "single-app"
+    }
+  },
+  "versions": [
+    {
+      "id": "v1.0.0",
+      "devices": [
+        "nm-epd-420-4c"
+      ]
+    }
+  ]
+}
