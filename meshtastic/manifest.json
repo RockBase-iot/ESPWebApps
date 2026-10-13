@@ -23,6 +23,7 @@
     "nm-epd-420-bw-inkhud": { "displayName": "NM-EPD-420-BW-InkHUD", "chip": "esp32s3", "fileSet": "single-app" }
   },
   "versions": [
-    { "id": "v2.8.0.67a9bde", "devices": ["nm-epd-420", "nm-epd-420-bw", "nm-epd-420-inkhud", "nm-epd-420-bw-inkhud"] }
+    { "id": "v2.8.0.67a9bde", "devices": ["nm-epd-420", "nm-epd-420-bw", "nm-epd-420-inkhud", "nm-epd-420-bw-inkhud"] },
+    { "id": "v2.8.0.c1eab04", "devices": ["nm-epd-420-bw", "nm-epd-420-bw-inkhud"] }
   ]
 }
